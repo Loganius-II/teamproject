@@ -7,8 +7,8 @@ A simple game where two players guess a number
 ### Number Guessing Game Flowchart
 ```mermaid
 graph TD;
-  A-->B;
-  A-->C;
+  Main-->Menu;
+  Menu-->Change Range;
   A-->D;
   A-->E;
 ```
