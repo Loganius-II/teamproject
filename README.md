@@ -15,13 +15,13 @@ graph TD;
 
 #### Function Diagrams
 
-| `function name1`    |               |  author     |
+| `main`    |               |  Roman     |
 | ------------------ | ------------- | ------------ |
 | `argument:type`    | takes input from the user for ____  |              |
 | `time:integer`     | calculates ______  | outputs ____             |
 | `name:string`      | takes input for name ___ | returns total |
 ***
-| `function name2`    |               |     author   |
+| ``    |               |     author   |
 | ------------------ | ------------- | ------------ |
 | `argument:type`    | takes input from the user for ____  |              |
 | `time:integer`     | calculates ______  | outputs ____             |
