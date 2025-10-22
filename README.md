@@ -7,23 +7,42 @@ A simple game where two players guess a number
 ### Number Guessing Game Flowchart
 ```mermaid
 graph TD;
-  A-->B;
-  A-->C;
-  A-->D;
-  A-->E;
+  Main-->Menu;
+  Main-->Change_Range;
+  Main-->Game;
+  Main-->Names;
+  Main-->Number
 ```
 
 #### Function Diagrams
 
 | `main`    |               |  Roman     |
 | ------------------ | ------------- | ------------ |
+| `.arguement:none.`    | takes no input  |              |
+| `..`     |   | outputs nothing            |
+| `..`      | Calls all other functions and runs the game | returns nothing |
+***
+| `game`    |               |     Game   |
+| ------------------ | ------------- | ------------ |
+| `argument:none`    | take input for the number guess  |              |
+| ``     | calculates how close they are to the random number  | >, <, or if they won the game             |
+| ``      | Runs the game having players take turn guessing the random number| returns nothing |
+***
+| `main`    |               |  Name     |
+| ------------------ | ------------- | ------------ |
 | `..`    | takes input from the user for ____  |              |
 | `..`     | calculates ______  | outputs ____             |
 | `..`      | takes input for name ___ | returns total |
 ***
-| ``    |               |     author   |
+| `main`    |               |  Name     |
 | ------------------ | ------------- | ------------ |
-| `argument:type`    | takes input from the user for ____  |              |
-| `time:integer`     | calculates ______  | outputs ____             |
-| `name:string`      | takes input for name ___ | returns total |
+| `..`    | takes input from the user for ____  |              |
+| `..`     | calculates ______  | outputs ____             |
+| `..`      | takes input for name ___ | returns total |
+***
+| `main`    |               |  Name     |
+| ------------------ | ------------- | ------------ |
+| `..`    | takes input from the user for ____  |              |
+| `..`     | calculates ______  | outputs ____             |
+| `..`      | takes input for name ___ | returns total |
 ***
