@@ -7,10 +7,11 @@ A simple game where two players guess a number
 ### Number Guessing Game Flowchart
 ```mermaid
 graph TD;
-  A-->B;
-  A-->C;
-  A-->D;
-  A-->E;
+  Main-->Menu;
+  Main-->Change_Range;
+  Main-->Game;
+  Main-->Names;
+  Main-->Number
 ```
 
 #### Function Diagrams
@@ -21,9 +22,9 @@ graph TD;
 | `..`     | calculates ______  | outputs ____             |
 | `..`      | takes input for name ___ | returns total |
 ***
-| ``    |               |     author   |
+| `main`    |               |  Name     |
 | ------------------ | ------------- | ------------ |
-| `argument:type`    | takes input from the user for ____  |              |
-| `time:integer`     | calculates ______  | outputs ____             |
-| `name:string`      | takes input for name ___ | returns total |
+| `..`    | takes input from the user for ____  |              |
+| `..`     | calculates ______  | outputs ____             |
+| `..`      | takes input for name ___ | returns total |
 ***
