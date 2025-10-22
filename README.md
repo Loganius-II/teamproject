@@ -17,7 +17,7 @@ graph TD;
 
 | `main`    |               |  Roman     |
 | ------------------ | ------------- | ------------ |
-| `..`    | takes input from the user for ____  |              |
+| `..`    | loop that runs the menu  |              |
 | `..`     | calculates ______  | outputs ____             |
 | `..`      | takes input for name ___ | returns total |
 ***
