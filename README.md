@@ -18,7 +18,24 @@ graph TD;
 
 | `main`    |               |  Roman     |
 | ------------------ | ------------- | ------------ |
-| `..`    | loop that runs the menu  |              |
+| `.arguement:none.`    | takes no input  |              |
+| `..`     |   | outputs nothing            |
+| `..`      | Calls all other functions and runs the game | returns nothing |
+***
+| `game`    |               |     Game   |
+| ------------------ | ------------- | ------------ |
+| `argument:none`    | take input for the number guess  |              |
+| ``     | calculates how close they are to the random number  | >, <, or if they won the game             |
+| ``      | Runs the game having players take turn guessing the random number| returns nothing |
+***
+| `player_name`    |               |  Logan     |
+| ------------------ | ------------- | ------------ |
+| `p1/p2:string`    | takes input from the user for two names  |    returns these values as a tuple          |
+
+***
+| `main`    |               |  Name     |
+| ------------------ | ------------- | ------------ |
+| `..`    | takes input from the user for ____  |              |
 | `..`     | calculates ______  | outputs ____             |
 | `..`      | takes input for name ___ | returns total |
 ***
