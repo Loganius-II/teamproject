@@ -1,4 +1,5 @@
 # main file that runs program
+import random
 
 def main():
     # loops the menu
@@ -33,13 +34,27 @@ def player_name():
     
     return p1, p2
 
+def random_num(num1, num2):
+    # num1 and num2 integers
+    # just returns a random number between the range
+    return random.randint(num1, num2)
+
 def game():
     #plays game
     pass
 
-def change_range():
+def change_range(num1, num2):
+    # num1 and num2 must be integers fo the range
     # changes the range of numbers
-    pass
+    # of global variables
+    # returns nothing
+    
+    if num2 < num1:
+        print('Range not changed due to the second number being smaller than the first')
+    else:
+        num1_range = num1
+        num2_range = num2
 
 if __name__ == '__main__':
     main()
+
