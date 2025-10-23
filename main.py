@@ -1,4 +1,5 @@
 # main file that runs program
+import random
 
 def main():
     # loops the menu
@@ -32,6 +33,15 @@ def player_name():
     p2 = input('Player 2 Name: ')
     
     return p1, p2
+
+def random_num(num1, num2):
+    # num1 and num2 integers
+    # just returns a random number between the range
+    
+    if num2 < num1:
+        print('Range not changed due to the second number being less than the first')
+    else:
+        return random.randint(num1, num2)
 
 def game():
     #plays game
