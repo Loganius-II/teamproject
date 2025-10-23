@@ -1,5 +1,8 @@
 # main file that runs program
 
+num1_range = 1
+num2_range = 1000
+
 def main():
     # loops the menu
     running = True
@@ -25,7 +28,16 @@ def menu():
         return False
 
 def game():
-    #plays game
+    #runs the game
+    player1, player2 = player_name()
+    number = random_num(num1_range, num2_range)
+    guess = 0
+    win = 0
+    while win 
+        while guess not in range(num1_range, num2_range):
+            guess1 = int(input(f"{player1} enter your guess for a number between {num1_range}-{num2_range}"))
+            if guess1 = number:
+                print(player1, "you win!!!")
     pass
 
 def change_range():
@@ -34,3 +46,4 @@ def change_range():
 
 if __name__ == '__main__':
     main()
+    
