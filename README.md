@@ -28,11 +28,10 @@ graph TD;
 | ``     | calculates how close they are to the random number  | >, <, or if they won the game             |
 | ``      | Runs the game having players take turn guessing the random number| returns nothing |
 ***
-| `main`    |               |  Name     |
+| `player_name`    |               |  Logan     |
 | ------------------ | ------------- | ------------ |
-| `..`    | takes input from the user for ____  |              |
-| `..`     | calculates ______  | outputs ____             |
-| `..`      | takes input for name ___ | returns total |
+| `p1/p2:string`    | takes input from the user for two names  |    returns these values as a tuple          |
+
 ***
 | `main`    |               |  Name     |
 | ------------------ | ------------- | ------------ |
