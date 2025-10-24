@@ -23,7 +23,20 @@ def menu():
         game()
         return True
     elif option == 2:
-        change_range()
+        Min = int(input("Please enter the minimum: "))
+        Max = int(input("Please enter the maximum: "))
+        while Min >= Max:
+            print("The minimum must be less than the maximum")
+            Min = int(input("Please enter the minimum: "))
+            Max = int(input("Please enter the maximum: "))
+        while Min < 1:
+            print("The minimum most be greater than 0")
+            Min = int(input("Please enter the minimum: ")) 
+            while Min >= Max:
+                print("The minimum must be less than the maximum")
+                Min = int(input("Please enter the minimum: "))
+                Max = int(input("Please enter the maximum: "))
+        change_range(Min, Max)
         return True
     elif option == 3:
         return False
@@ -46,24 +59,42 @@ def game():
     #runs the game
     player1, player2 = player_name()
     number = random_num(num1_range, num2_range)
+    range1 = num1_range
+    range2 = num2_range
     guess = 0
     win = 0
-    while win 
-        while guess not in range(num1_range, num2_range):
-            guess1 = int(input(f"{player1} enter your guess for a number between {num1_range}-{num2_range}"))
-            if guess1 = number:
-                print(player1, "you win!!!")
-    pass
+    while not win: 
+        while guess not in range(range1, range2):
+            guess = int(input(f"{player1} guess a number between {range1}-{range2}: "))
+        if guess == number:
+            print(player1, "you win!!!")
+            win = 1
+        else:
+            if guess < number:
+                range1 = guess
+            else:
+                range2 = guess
+        guess = 0
+        if not win:
+            while guess not in range(range1, range2):
+                guess = int(input(f"{player2} guess a number between {range1}-{range2}: "))
+            if guess == number:
+                print(player2, "you win!!!")
+                win = 1
+            else:
+                if guess < number:
+                    range1 = guess
+                else:
+                    range2 = guess
+        guess = 0
+    
 
 def change_range(num1, num2):
     # num1 and num2 must be integers fo the range
     # changes the range of numbers
     # of global variables
     # returns nothing
-    
-    if num2 < num1:
-        print('Range not changed due to the second number being smaller than the first')
-    else:
+        global num1_range, num2_range
         num1_range = num1
         num2_range = num2
 
